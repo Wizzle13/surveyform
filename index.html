@@ -10,15 +10,38 @@
     <h1 id="title">Survey Form</h1>
     <p id="description">This is a simple form to collect data from users.</p>
     <form id="survey-form">
-        <label for="name" id="name-label">Enter your Name:
-            <input id="name" type="text" placeholder="Your name here" required />
-        </label>
-        <label for="email" id="email-label",>Enter your Email:
-            <input id="email" type="email" placeholder="email@email.com" required />
-        </label>
-        <label for="number" id="number-label">Enter you favorate number between 1 -100.
-            <input id="number" type="number" min="0" max="100" placeholder="13">
-        </label>
+        <fieldset>
+            <label for="name" id="name-label">Enter your Name:
+                <input id="name" type="text" placeholder="Your name here" required />
+            </label>
+            <label for="email" id="email-label",>Enter your Email:
+                <input id="email" type="email" placeholder="email@email.com" required />
+            </label>
+            <label for="number" id="number-label">Enter you favorate number between 1 -100.
+                <input id="number" type="number" min="0" max="100" placeholder="13">
+            </label>
+        </fieldset>
+        <fieldset>
+            <label>Which do you prefer?
+                <select id="dropdown">
+                    <option>Select One</option>
+                    <option>Cats</option>
+                    <option>Dogs</option>
+                </select>
+            </label>
+            <label>
+                <input type="radio">
+            </label>
+            <label>
+                <input type="radio">
+            </label>
+        </fieldset>
+        <fieldset>
+            <label>Tell us about yourself.
+                <textarea></textarea>
+            </label>
+        </fieldset>
+        <input type="submit" id="submit" value="Submit" />
     </form>
 </body>
 </html>
