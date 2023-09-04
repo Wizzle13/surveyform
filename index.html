@@ -23,17 +23,27 @@
         </fieldset>
         <fieldset>
             <label>Which do you prefer?
-                <select id="dropdown">
-                    <option>Select One</option>
-                    <option>Cats</option>
-                    <option>Dogs</option>
+                <select id="dropdown" name="dropdown">
+                    <option value ="">Select One</option>
+                    <option value ="1">Cats</option>
+                    <option value ="2">Dogs</option>
                 </select>
             </label>
-            <label>
-                <input type="radio">
+            <label for="indoor">
+                <input type="radio" id="indoor" name="indooroutdoor" class="inline" value="indooroutdoor" />Indoor pets
             </label>
-            <label>
-                <input type="radio">
+            <label for="outdoor">
+                <input type="radio" id="outdoor" name="indooroutdoor" class="inline" value="indooroutdoor" />Outdoor pets
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="spouse">
+                <input type="checkbox" id="spouse" class="inline" value="spouse"/> 
+                My Spouse loves animals.
+            </label>
+            <label for="myself">
+                <input type="checkbox" id="myself" class="inline" value="myself" /> 
+                I love animals.
             </label>
         </fieldset>
         <fieldset>
